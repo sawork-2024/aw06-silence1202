@@ -1,0 +1,17 @@
+com/micropos/products/model/ChargeRequest.class
+com/micropos/products/biz/PosService.class
+com/micropos/products/db/PosDB.class
+com/micropos/products/model/Item.class
+com/micropos/products/model/NestedSettings.class
+com/micropos/products/WebPosApplication.class
+com/micropos/products/model/Product.class
+com/micropos/products/model/Settings.class
+com/micropos/products/jpa/ProductRepository.class
+com/micropos/products/jpa/CategoriesRepository.class
+com/micropos/products/jpa/SettingsRepository.class
+com/micropos/products/biz/PosServiceImp.class
+com/micropos/products/db/JD.class
+com/micropos/products/model/ProductUpdateRequest.class
+com/micropos/products/config/RestTemplateConfig.class
+com/micropos/products/web/PosController.class
+com/micropos/products/model/Categories.class
