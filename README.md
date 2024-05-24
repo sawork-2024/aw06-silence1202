@@ -12,7 +12,7 @@
 请编写readme对自己的系统和实验进行详细介绍。
 ————————————————————————————————————————————————————————————————————————————————————
 
-##水平扩展测试：
+## 水平扩展测试：
 
 先用mvn install将products打包为jar文件，
 再利用webpos-products下的文件Dockerfile进行打包，利用haproxy.cfg进行水平扩展
@@ -33,7 +33,7 @@
 
 ———————————————————————————————————————————————————————————————————————————————————————————
 
-##项目介绍
+## 项目介绍
 
 启动服务顺序：webpos-api, webpos-discovery, webpos-gateway, webpos-orders, webpos-products
 
@@ -47,14 +47,14 @@ mvn spring-boot:run
 http-server ./ -p 5502
 ```
 
-##功能
+## 功能
 
 后端各个模块注册到8761端口的eureka注册中心discovery。
 由网关webpos-gateway实现转发，将客户端的8080端口请求转发到8081端口，
 由webpos-products服务实现商品管理，并利用restTemplate进行跨服务调用8083端口的webpos-orders创建订单
 webpos-api定义共用的api与DTO，将服务中的实体抽象成DTO，需要mapper进行映射，使得跨服务接受数据时不需要关注实例本身，提高代码复用性
 
-##断路器
+## 断路器
 
 所有服务都有其yml配置文件，有关products下的断路器配置：
 ```
